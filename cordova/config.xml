@@ -26,7 +26,8 @@
     <preference name="StatusBarBackgroundColor" value="#000000" />
     <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="ShowSplashScreenSpinner" value="false" />
-    <plugin name="cordova-plugin-device" spec="^1.1.6" />s
+    <preference name="DisallowOverscroll" value="true" />
+    <plugin name="cordova-plugin-device" spec="^1.1.6" />
     <plugin name="cordova-plugin-statusbar" spec="^2.2.3" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
     <engine name="android" spec="^6.2.3" />
