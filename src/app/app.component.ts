@@ -1,5 +1,6 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
 import { RobotControl } from './RobotControl';
+import { fromEvent } from 'rxjs/observable/fromEvent';
 
 @Component({
   selector: 'robo-app',
@@ -13,28 +14,29 @@ export class AppComponent implements OnInit {
     this._robotControl = robotControl;
   }
 
+
   ngOnInit() {
     this._robotControl.connect('http://192.168.0.181:8080')
       .then(() => console.log('connected'),
         (err) => console.log(err));
   }
 
-  left() {
+  goLeft() {
     console.log('left');
     this._robotControl.left();
   }
 
-  right() {
+  goRight() {
     console.log('right');
     this._robotControl.right();
   }
 
-  forwards() {
+  goForwards() {
     console.log('forwards');
     this._robotControl.forwards();
   }
 
-  backwards() {
+  goBackwards() {
     console.log('backwards');
     this._robotControl.backwards();
   }
