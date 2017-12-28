@@ -1,0 +1,42 @@
+
+.control-buttons {
+  overflow: auto;
+  margin: auto;
+  vertical-align: center;
+}
+
+.square {
+  float:left;
+  position: relative;
+  width: 30%;
+  padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+  margin:1.66%;
+  overflow:hidden;
+}
+
+.content {
+  position:absolute;
+  height:90%; /* = 100% - 2*5% padding */
+  width:90%; /* = 100% - 2*5% padding */
+  padding: 5%;
+
+}
+
+.top-middle {
+  background-image: url('../assets/images/arrow.svg');
+  transform: rotateZ(90deg);
+}
+
+.middle-left {
+  background-image: url('../assets/images/arrow.svg');
+}
+
+.middle-right {
+  background-image: url('../assets/images/arrow.svg');
+  transform: rotateZ(180deg);
+}
+
+.bottom-middle {
+  background-image: url('../assets/images/arrow.svg');
+  transform: rotateZ(270deg);
+}
