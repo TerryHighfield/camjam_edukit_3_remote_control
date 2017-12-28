@@ -3,7 +3,7 @@
     <div class="content top-left">
     </div>
   </div>
-  <div #forwards class="square" (mousedown)="goForwards()" (mouseup)="stop()">
+  <div #forwards class="square" (mousedown)="goForwards()" (touchstart)="goForwards()" (mouseup)="stop()" (touchend)="stop()">
     <div class="content top-middle">
     </div>
   </div>
@@ -11,7 +11,7 @@
     <div class="content top-right">
     </div>
   </div>
-  <div #left class="square" (mousedown)="goLeft()" (mouseup)="stop()">
+  <div #left class="square" (mousedown)="goLeft()" (touchstart)="goLeft()" (mouseup)="stop()" (touchend)="stop()">
     <div class="content middle-left">
     </div>
   </div>
@@ -19,7 +19,7 @@
     <div class="content middle">
     </div>
   </div>
-  <div #right class="square" (mousedown)="goRight()" (mouseup)="stop()">
+  <div #right class="square" (mousedown)="goRight()" (touchstart)="goRight()" (mouseup)="stop()" (touchend)="stop()">
     <div class="content middle-right">
     </div>
   </div>
@@ -27,7 +27,7 @@
     <div class="content bottom-left">
     </div>
   </div>
-  <div #backwards class="square" (mousedown)="goBackwards()" (mouseup)="stop()">
+  <div #backwards class="square" (mousedown)="goBackwards()" (touchstart)="goBackwards()" (mouseup)="stop()" (touchend)="stop()">
     <div class="content bottom-middle">
     </div>
   </div>
